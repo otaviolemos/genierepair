@@ -85,7 +85,6 @@ public class JUnitListener extends TestRunListener {
 	public void testCaseStarted(ITestCaseElement testCaseElement) {
 		if(Activator.isListenningToJUnit()){
 			super.testCaseStarted(testCaseElement);
-			
 		}
 	}
 

@@ -67,7 +67,7 @@ public class SolrQueryCreator {
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
 		String url = store.getString(PreferenceConstants.RELATED_WORD_SERVER)+"/related-words-service"; 
 		String expanders = "";
-		boolean worldnet = true, code=true,type=true;
+		boolean worldnet = true, code=false,type=true;
 		if(worldnet)expanders+=","+Expander.WORDNET_EXPANDER;
 		if(code)expanders+=","+Expander.CODE_VOCABULARY_EXPANDER;
 		if(type)expanders+=","+Expander.TYPE_EXPANDER;
