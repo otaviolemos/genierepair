@@ -4,9 +4,10 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/aqe.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.7-bin.jar"/>
-	<classpathentry kind="lib" path="lib/sourcerer-search.jar"/>
+	<classpathentry kind="lib" path="/Users/otaviolemos/Documents/workspace/genierepair/GenieRepair/lib/sourcerer-search.jar"/>
+	<classpathentry kind="lib" path="lib/sourcerer-aqe.jar"/>
+	<classpathentry kind="lib" path="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.debug.ui_3.11.200.v20160307-1120.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

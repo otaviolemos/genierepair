@@ -23,7 +23,7 @@ public class GenieRepairTestRunner {
 		 IJavaElement jtest = test.getPrimaryElement();
 		 StructuredSelection iss = new StructuredSelection(jtest);
 		 JUnitLaunchShortcut js = new JUnitLaunchShortcut();
-		 //js.launch(iss, "run");
+		 js.launch(iss, "run");
 	}
 	
 }

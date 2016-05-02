@@ -80,7 +80,7 @@ public class RelatedWordSearcher {
 		FelipeDebug.debug("[RelatedWordSearcher]: getting related words for "+word);
 
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
-		String url = store.getString(PreferenceConstants.RELATED_WORD_SERVER)+"/related-words-service/GetRelated?word=";
+		String url = store.getString(PreferenceConstants.RELATED_WORD_SERVER)+"/wordnet-related-service/GetRelated?word=";
 
 		InputStream serverAnswer;
 		JAXBContext context;

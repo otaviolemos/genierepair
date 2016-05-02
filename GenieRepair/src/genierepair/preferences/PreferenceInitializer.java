@@ -16,7 +16,7 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
 		store.setDefault(FILE_SERVER, "http://127.0.0.1:8080");
 		store.setDefault(LISTEN_JUNIT, true);
-		store.setDefault(RELATED_WORD_SERVER, "http://snake.ics.uci.edu:8080");
+		store.setDefault(RELATED_WORD_SERVER, "http://127.0.0.1:8080");
 		store.setDefault(SLICE_SERVER, "http://127.0.0.1:8080");
 		store.setDefault(SOLR_SERVER, "http://127.0.0.1:8080");
 		store.setDefault(ANNOTATIONPACKAGE, "sliceannotation");

@@ -65,11 +65,10 @@ public class SolrQueryCreator {
 		*/
 		//
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
-		String url = store.getString(PreferenceConstants.RELATED_WORD_SERVER)+"/related-words-service"; 
+		String url = store.getString(PreferenceConstants.RELATED_WORD_SERVER)+"/wordnet-related-service"; 
 		String expanders = "";
-		boolean worldnet = true, code=false,type=true;
+		boolean worldnet = true, type=true;
 		if(worldnet)expanders+=","+Expander.WORDNET_EXPANDER;
-		if(code)expanders+=","+Expander.CODE_VOCABULARY_EXPANDER;
 		if(type)expanders+=","+Expander.TYPE_EXPANDER;
 		if(expanders!=""){
 			expanders=expanders.substring(1);//remove first comma
@@ -77,7 +76,7 @@ public class SolrQueryCreator {
 		SourcererQueryBuilder sqb;
 		FelipeDebug.debug(getClass(), "using related words service url = "+url);
 		try {
-			sqb = new SourcererQueryBuilder(url,expanders,true,true);
+			sqb = new SourcererQueryBuilder(url,expanders,false,false, false, true);
 			//query[2],query[3],query[4]//method name, return type, params type
 			String param="";
 			for(ITypeBinding t : mi.getParamsType()){

@@ -19,7 +19,7 @@ public class SlicerConnector {
 
 	public SlicerConnector(long eid){
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
-		slicerServer = store.getString(PreferenceConstants.SLICE_SERVER)+"/SliceServer?entityID=";
+		slicerServer = store.getString(PreferenceConstants.SLICE_SERVER)+"/slice-server/?entityID=";
 		this.entityID=eid;
 	}
 

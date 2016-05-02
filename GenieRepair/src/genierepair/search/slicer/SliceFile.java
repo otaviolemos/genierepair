@@ -299,7 +299,7 @@ public class SliceFile extends AbstractProjectEditor{
 		return true;
 	}
 	
-	protected void createAnnotation() throws IOException{
+	public void createAnnotation() throws IOException{
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
 		String pkgName = store.getString(PreferenceConstants.ANNOTATIONPACKAGE);
 		String annName = store.getString(PreferenceConstants.ANNOTATIONCLASS);

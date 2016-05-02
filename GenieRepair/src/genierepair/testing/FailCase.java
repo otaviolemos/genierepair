@@ -172,7 +172,7 @@ public class FailCase {
 			ASTNode ex = stack.pop();
 			if(ex instanceof MethodInvocation){
 				MethodInvocation mi = (MethodInvocation) ex;
-				if(mi.getName().getIdentifier().equals("assertEquals") && assertNumber--==0){
+				if((mi.getName().getIdentifier().equals("assertEquals") || mi.getName().getIdentifier().equals("assertArrayEquals")) && assertNumber--==0){
 					List<?> args = mi.arguments();
 					if(args.size()>=2){
 						Object secondParam = args.get(1);
@@ -244,6 +244,10 @@ public class FailCase {
 					} //end same identifier
 				}//end simplename
 			} //end assignment
+			else if (previousExp instanceof MethodInvocation) {
+				MyMethodInterface intrfce = getMethodinterface((MethodInvocation) previousExp,rturn);
+				return intrfce;
+			}
 			/*
 			else if(previousExp instanceof VariableDeclarationStatement){
 				VariableDeclarationStatement varDecl = (VariableDeclarationStatement) previousExp;

@@ -6,7 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: lib/sourcerer-search.jar,
  .,
  lib/,
- lib/aqe.jar,
+ lib/sourcerer-aqe.jar,
  lib/commons-lang-2.6.jar,
  lib/mysql-connector-java-5.1.7-bin.jar
 Bundle-Activator: genierepair.Activator
@@ -39,6 +39,7 @@ Import-Package: org.eclipse.jdt.junit,
  org.eclipse.jdt.junit.launcher,
  org.eclipse.jdt.junit.model,
  org.eclipse.jdt.launching,
+ org.eclipse.jdt.debug.ui,
  org.eclipse.jface.text,
  org.eclipse.pde.ui.launcher,
  org.eclipse.ui.texteditor

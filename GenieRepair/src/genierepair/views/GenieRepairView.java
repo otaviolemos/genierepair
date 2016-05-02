@@ -242,6 +242,9 @@ public class GenieRepairView extends ViewPart {
 						FelipeDebug.debug(GenieRepairView.this.getClass(),"Merging "+eid);
 						slicerF.merge();
 						FelipeDebug.debug(GenieRepairView.this.getClass(),"Merged");
+						FelipeDebug.debug(GenieRepairView.this.getClass(),"Creating annotation");
+						slicerF.createAnnotation();
+						FelipeDebug.debug(GenieRepairView.this.getClass(),"Annotation created");
 						FelipeDebug.debug(GenieRepairView.this.getClass(),"Saving project");
 						slicerF.saveAndRebuild();
 						FelipeDebug.debug(GenieRepairView.this.getClass(),"Saved");
